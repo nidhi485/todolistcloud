@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>To-Do List App</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <div class="container">
+     <header>
+       <h1>To-Do List</h1>
+       <button id="clearAllBtn" class="clear-btn">Clear All</button>
+     </header>
+     <div class="task-input">
+       <input type="text" id="newTask" placeholder="Add a new task...">
+       <button id="addTaskBtn">Add</button>
+     </div>
+     <ul id="tasksList"></ul>
+   </div>
+ 
+   <!-- Firebase SDKs -->
+   <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
+ 
+   <!-- Your app.js file (module type) -->
+   <script type="module" src="app.js"></script>
+ </body>
+ </html>
